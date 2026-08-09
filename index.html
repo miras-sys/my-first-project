@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Для Алтынай ❤️ Altynym</title>
+    <title>Для Алтынай ❤️</title>
     <style>
         body {
             background: linear-gradient(135deg, #ffb6d9 0%, #ffc1e3 50%, #ffd6ec 100%);
@@ -10,40 +10,11 @@
             text-align: center;
             color: #d63384;
             padding: 30px 20px;
-            min-height: 100vh;
         }
-        
-        .heart-float {
-            position: fixed;
-            color: #ff69b4;
-            font-size: 30px;
-            animation: float 6s infinite ease-in;
-            opacity: 0.7;
-            z-index: -1;
-        }
-        @keyframes float {
-            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-            50% { opacity: 1; }
-            100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
-        }
-
         .kitty { font-size: 80px; animation: wiggle 2s infinite; }
-        @keyframes wiggle {
-            0%, 100% { transform: rotate(-5deg); }
-            50% { transform: rotate(5deg); }
-        }
-
-        h1 {
-            font-size: 40px;
-            text-shadow: 3px 3px 0px #fff;
-        }
-        
-        .name {
-            color: #ff1493;
-            font-size: 45px;
-            font-weight: bold;
-        }
-        
+        @keyframes wiggle { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
+        h1 { font-size: 40px; text-shadow: 3px 3px 0px #fff; }
+        .name { color: #ff1493; font-size: 45px; font-weight: bold; }
         .box {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 30px;
@@ -53,61 +24,53 @@
             box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
             border: 4px dashed #ff69b4;
         }
-
         .photo {
             width: 100%;
             max-width: 400px;
             border-radius: 20px;
             border: 5px solid #ff69b4;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
             margin: 20px 0;
         }
-
         p { font-size: 20px; line-height: 1.8; color: #c2185b; }
-        
-        .music {
-            background: #fff;
-            padding: 15px;
-            border-radius: 15px;
-            margin: 20px 0;
+        .music-btn {
+            background: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin: 10px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
         }
+        .music-btn:hover { transform: scale(1.1); background: #ff1493; }
     </style>
 </head>
 <body>
-
-    <div class="heart-float" style="left: 10%;">💖</div>
-    <div class="heart-float" style="left: 50%; animation-delay: 1s;">💗</div>
-    <div class="heart-float" style="left: 90%; animation-delay: 2s;">💕</div>
-
     <div class="kitty">🎀 🐱 🎀</div>
-    
     <h1><span class="name">Алтынай</span>, я скучаю по тебе!</h1>
     
     <div class="box">
         <img src="us.jpg" alt="Мы с Алтынай" class="photo">
         
-        <!-- МУЗЫКА -->
-        <div class="music">
-            <p><b>Наша песня 🎵</b></p>
-            <iframe width="100%" height="80" src="https://www.youtube.com/embed?listType=search&list=Sadraddin+Altynym" frameborder="0" allow="autoplay"></iframe>
-            <p style="font-size: 16px;">Sadraddin - Altynym</p>
+        <div>
+            <p><b>Включи нашу песню 🎵</b></p>
+            <a href="https://youtu.be/sZrHNW5qc9w?si=vsFkj-lHxsCsKWTS" target="_blank" class="music-btn">
+                💖 Нажми и слушай 💖
+            </a>
         </div>
         
         <p>
-            Когда слушаю эту песню, думаю только о тебе...<br><br>
-            
+            Когда играет эта песня, я думаю только о тебе...<br><br>
             Алтынай, ты мое золото ❤️<br>
             Я люблю тебя очень сильно!<br><br>
-            
             Скучаю по твоим поцелуйчикам 😘<br>
-            Скучаю по нам...<br><br>
-            
+            Скучаю по твоему смеху<br>
             Жду встречи, моя Алтыным 💕
         </p>
         <p><b>Всегда твой, Мирас 🎀</b></p>
     </div>
-    
     <p style="font-size: 30px;">💖 Алтынай 💕 Мирас 💗</p>
-
 </body>
 </html>
